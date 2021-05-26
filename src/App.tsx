@@ -1,10 +1,11 @@
+import { Stack } from "@chakra-ui/layout";
 import React from "react";
 
 const App = () => {
   return (
-    <div>
+    <Stack direction="row">
       <h1>Calculator</h1>
-    </div>
+    </Stack>
   );
 };
 
