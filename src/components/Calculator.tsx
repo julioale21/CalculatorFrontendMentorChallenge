@@ -5,7 +5,7 @@ import ButtonCalc from "./ButtonCalc";
 
 const Calculator = () => {
   return (
-    <Stack width={{ base: "325px" }}>
+    <Stack width={{ base: "325px", md: "487px" }}>
       <Stack paddingTop={24}>
         <Stack direction="row" justifyContent="space-between" marginBottom={2}>
           <Text color="white" fontSize="2.1rem" fontWeight="bold">
