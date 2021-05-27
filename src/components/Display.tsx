@@ -7,8 +7,15 @@ interface DisplayProps {
 
 const Display: React.FC<DisplayProps> = ({ value }) => {
   return (
-    <Box backgroundColor="gray.800" borderRadius="5px" marginBottom={4} padding={3} width="100%">
-      <Text color="white" float="right" fontSize="4xl" fontWeight="bold">
+    <Box
+      backgroundColor="gray.800"
+      borderRadius="5px"
+      height="5.5rem"
+      marginBottom={4}
+      padding={3}
+      width="100%"
+    >
+      <Text color="white" float="right" fontSize="2.1rem" fontWeight="bold">
         {value}
       </Text>
     </Box>
