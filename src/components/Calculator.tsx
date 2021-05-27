@@ -1,6 +1,7 @@
 import React from "react";
-import { Stack, Grid, Button, GridItem, Text } from "@chakra-ui/react";
+import { Stack, Grid, GridItem, Text } from "@chakra-ui/react";
 import Display from "./Display";
+import ButtonCalc from "./ButtonCalc";
 
 const Calculator = () => {
   return (
@@ -22,175 +23,49 @@ const Calculator = () => {
           padding="1.6rem"
         >
           <Grid gap={3} templateColumns="repeat(4, 1fr)">
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              7
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              8
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              9
-            </Button>
-            <Button
-              backgroundColor="blue.700"
-              boxShadow="1px 5px #0c4271"
+            <ButtonCalc value="7" />
+            <ButtonCalc value="8" />
+            <ButtonCalc value="9" />
+            <ButtonCalc
+              background="blue.700"
               color="white"
               fontSize="xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              DEL
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              4
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              5
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              6
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              +
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              1
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              2
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              3
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              -
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              .
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              0
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              /
-            </Button>
-            <Button
-              boxShadow="1px 5px gray"
-              color="gray.600"
-              fontSize="3xl"
-              fontWeight="bold"
-              height={{ base: "3.8rem" }}
-            >
-              x
-            </Button>
+              shadowColor="#0c4271"
+              value="DEL"
+            />
+
+            <ButtonCalc value="4" />
+            <ButtonCalc value="5" />
+            <ButtonCalc value="6" />
+            <ButtonCalc value="+" />
+
+            <ButtonCalc value="1" />
+            <ButtonCalc value="2" />
+            <ButtonCalc value="3" />
+            <ButtonCalc value="-" />
+
+            <ButtonCalc value="." />
+            <ButtonCalc value="0" />
+            <ButtonCalc value="/" />
+            <ButtonCalc value="x" />
+
             <GridItem colSpan={2}>
-              <Button
-                backgroundColor="blue.700"
-                boxShadow="1px 5px #0c4271"
+              <ButtonCalc
+                background="blue.700"
                 color="white"
-                height={{ base: "3.8rem" }}
-                size="sm"
-                width="100%"
-              >
-                RESET
-              </Button>
+                fontSize="sm"
+                shadowColor="#0c4271"
+                value="RESET"
+              />
             </GridItem>
             <GridItem colSpan={2}>
-              <Button
-                backgroundColor="red.500"
-                boxShadow="1px 5px #962d2d"
+              <ButtonCalc
+                background="red.500"
                 color="white"
                 fontSize="xs"
-                height={{ base: "3.8rem" }}
-                size="sm"
-                width="100%"
-              >
-                =
-              </Button>
+                shadowColor="#962d2d"
+                value="="
+              />
             </GridItem>
           </Grid>
         </Stack>
