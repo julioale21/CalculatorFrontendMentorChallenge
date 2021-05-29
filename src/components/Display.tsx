@@ -2,7 +2,7 @@ import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 
 interface DisplayProps {
-  value: number;
+  value: string;
 }
 
 const Display: React.FC<DisplayProps> = ({ value }) => {
@@ -12,6 +12,7 @@ const Display: React.FC<DisplayProps> = ({ value }) => {
       borderRadius="5px"
       height="5.5rem"
       marginBottom={4}
+      overflow="hidden"
       padding={3}
       width="100%"
     >
