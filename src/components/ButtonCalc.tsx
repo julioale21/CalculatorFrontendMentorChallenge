@@ -7,6 +7,7 @@ interface ButtonProps {
   shadowColor?: string;
   fontSize?: string;
   background?: string;
+  onClickEvent?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 const ButtonCalc: React.FC<ButtonProps> = ({
@@ -15,6 +16,7 @@ const ButtonCalc: React.FC<ButtonProps> = ({
   shadowColor = "gray",
   fontSize = "3xl",
   background,
+  onClickEvent,
 }) => {
   const hover = background ? background + ".500" : "gray.400";
 
@@ -27,7 +29,9 @@ const ButtonCalc: React.FC<ButtonProps> = ({
       fontSize={fontSize}
       fontWeight="bold"
       height={{ base: "3.8rem" }}
+      value={value}
       width="full"
+      onClick={onClickEvent}
     >
       {value}
     </Button>
