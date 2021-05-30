@@ -26,13 +26,29 @@ Adjust the color theme based on their preference
 ## Desktop Design
 
 <div>
-  <img src="./docs/desktop-design.jpg">
+  <img src="./docs/desktop-design-theme-1.jpg">
+</div>
+
+<div>
+  <img src="./docs/desktop-design-theme-2.jpg">
+</div>
+
+<div>
+  <img src="./docs/desktop-design-theme-3.jpg">
 </div>
 
 ## Mobile Design
 
 <p align="center">
-  <img src="./docs/mobile-design.jpg">
+  <img src="./docs/mobile-design-theme-1.jpg">
+</p>
+
+<p align="center">
+  <img src="./docs/mobile-design-theme-2.jpg">
+</p>
+
+<p align="center">
+  <img src="./docs/mobile-design-theme-3.jpg">
 </p>
 
 
@@ -42,22 +58,32 @@ Adjust the color theme based on their preference
 ## Project
 ### Tools
 
-- CSS and SASS
-- Javascript
-- HTML
+- React.js
+- Create-react-app
+- Chakra UI
 
 ### Project Structure
 The files are structured as follow:
 
     .
+    ├── docs
     ├── public               # Static Files
     ├── src
-        ├── js           
-        ├── styles      
-            ├── estilos.css      
-            ├── estilos.scss        
-        ├── docs             # Utilidades
-        index.html
+        ├── components  
+            ├── ButtonCalc.tsx      
+            ├── Calculator.tsx
+            ├── Display.tsx
+            ├── ThemeSwitch.tsx
+            ├── shadowColors.ts
+            ├── useCalculator.ts
+        ├── themes      
+            ├── theme1.ts      
+            ├── theme2.ts
+            ├── theme3.ts
+        App.tsx
+        ThemeContext.ts
+        index.css
+        index.ts
 
     └── README.md            # The first page that the user will view when will visit the repository.
 
