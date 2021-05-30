@@ -22,6 +22,9 @@ const ButtonCalc: React.FC<ButtonProps> = ({
       _focus={{
         otline: "none",
       }}
+      _hover={{
+        bg: background,
+      }}
       backgroundColor={background}
       boxShadow={`1px 5px ${shadow}`}
       color={color}
