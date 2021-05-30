@@ -53,7 +53,7 @@ Adjust the color theme based on their preference
 
 
 ## Demo
-[https://frontend-mentor-count-down.vercel.app/](https://frontend-mentor-count-down.vercel.app/)
+[https://frontend-mentor-challenge-calculator.vercel.app/](https://frontend-mentor-challenge-calculator.vercel.app/)
 
 ## Project
 ### Tools
