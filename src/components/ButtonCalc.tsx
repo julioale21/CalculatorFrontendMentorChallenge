@@ -1,10 +1,9 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
-
 interface ButtonProps {
   color?: string;
   value: string;
-  shadowColor?: string;
+  shadow?: string;
   fontSize?: string;
   background?: string;
   onClickEvent?: (e: React.MouseEvent<HTMLButtonElement>) => void;
@@ -12,19 +11,16 @@ interface ButtonProps {
 
 const ButtonCalc: React.FC<ButtonProps> = ({
   value,
-  color = "gray.600",
-  shadowColor = "gray",
+  color = "color_text_button",
+  shadow = "btn",
   fontSize = "3xl",
-  background,
+  background = "bg_base_key",
   onClickEvent,
 }) => {
-  const hover = background ? background + ".500" : "gray.400";
-
   return (
     <Button
-      _hover={{ bg: hover }}
       backgroundColor={background}
-      boxShadow={`1px 5px ${shadowColor}`}
+      boxShadow={`1px 5px ${shadow}`}
       color={color}
       fontSize={fontSize}
       fontWeight="bold"
