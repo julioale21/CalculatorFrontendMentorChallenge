@@ -19,6 +19,9 @@ const ButtonCalc: React.FC<ButtonProps> = ({
 }) => {
   return (
     <Button
+      _focus={{
+        otline: "none",
+      }}
       backgroundColor={background}
       boxShadow={`1px 5px ${shadow}`}
       color={color}
