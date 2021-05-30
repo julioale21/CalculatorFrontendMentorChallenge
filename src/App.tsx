@@ -25,7 +25,7 @@ const App = () => {
   return (
     <ThemeContext.Provider value={{ themeNumber, setThemeNumber }}>
       <ChakraProvider theme={currentTheme}>
-        <Stack alignItems="center" backgroundColor="bg_main" height="full">
+        <Stack alignItems="center" backgroundColor="bg_main" height="100%">
           <Calculator />
         </Stack>
       </ChakraProvider>
